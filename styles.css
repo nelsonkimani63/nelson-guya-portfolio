@@ -86,10 +86,10 @@ p {
 
 #header {
     position: fixed;
-    z-index: 1000;
+    z-index: ;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -395,7 +395,7 @@ p {
 /* End Projects section */
 
 
-/* About Section */
+/* About me Section */
 
 #about .about {
     flex-direction: column-reverse;
@@ -415,7 +415,7 @@ p {
 }
 
 #about .col-right h2 {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     margin-bottom: 10px;
@@ -423,6 +423,7 @@ p {
 
 #about .col-right p {
     margin-bottom: 20px;
+    font-size: 2.0rem;
 }
 
 #about .col-right .cta {
@@ -525,7 +526,7 @@ p {
 #footer h2 {
     color: white;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -533,22 +534,13 @@ p {
 
 #footer .social-icon {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #footer .social-item {
     height: 50px;
     width: 50px;
-    margin: 0 5px;
-}
-
-#footer .social-item img {
-    filter: grayscale(1);
-    transition: 0.3s ease filter;
-}
-
-#footer .social-item:hover img {
-    filter: grayscale(0);
+    margin: 0 30px;
 }
 
 #footer p {
@@ -560,10 +552,10 @@ p {
 /* End Footer */
 
 
-/* Keyframes */
+/* Start Keyframes */
 
 @keyframes hamburger_puls {
-    0% {
+    */ 0% {
         opacity: 1;
         transform: scale(1);
     }
@@ -598,7 +590,7 @@ p {
 }
 
 
-/* End Keyframes */
+/* End Keyframes
 
 
 /* Media Query For Tablet */
