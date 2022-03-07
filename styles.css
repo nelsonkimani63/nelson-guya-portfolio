@@ -73,7 +73,7 @@ p {
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: black;
+    color: white;
 }
 
 .brand h1 span {
@@ -94,7 +94,7 @@ p {
 
 #header .header {
     min-height: 8vh;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: black;
 }
 
 #header .nav-bar {
@@ -105,6 +105,7 @@ p {
     height: 100%;
     max-width: 1300px;
     padding: 0 10px;
+    z-index: 9999;
 }
 
 #header .nav-list ul {
@@ -132,19 +133,6 @@ p {
     text-transform: uppercase;
     padding: 20px;
     display: block;
-}
-
-#header .nav-list ul a::after {
-    content: attr(data-after);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    color: rgba(240, 248, 255, 0.021);
-    font-size: 13rem;
-    letter-spacing: 50px;
-    z-index: -1;
-    transition: 0.3s ease letter-spacing;
 }
 
 #header .nav-list ul li:hover a::after {
@@ -224,14 +212,6 @@ p {
 
 /* Welcome Section */
 
-#welcome {
-    background-image: url(./img/hero-bg.png);
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-}
-
 #welcome::after {
     content: '';
     position: absolute;
@@ -252,9 +232,16 @@ p {
 
 #welcome h1 {
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     color: crimson;
+}
+
+#welcome h1 span {
+    display: block;
+    font-size: 8rem;
+    position: relative;
+    color: black;
 }
 
 
@@ -437,7 +424,7 @@ p {
 /* Footer */
 
 #footer {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, black 0%, black 100%);
 }
 
 #footer .footer {
@@ -450,7 +437,7 @@ p {
 #footer h2 {
     color: white;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -462,9 +449,9 @@ p {
 }
 
 #footer .social-item {
-    height: 50px;
-    width: 50px;
-    margin: 0 30px;
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
 }
 
 #footer p {
@@ -486,11 +473,8 @@ p {
     h1.section-title {
         font-size: 6rem;
     }
-    /* Hero */
-    #hero h1 {
-        font-size: 7rem;
-    }
-    /* End Hero */
+    /* Welcome */
+    /* End welcome */
     /* Project */
     #projects .project-item {
         flex-direction: row;
