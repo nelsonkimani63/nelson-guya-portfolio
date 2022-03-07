@@ -463,6 +463,9 @@ p {
 /* End Footer */
 
 
+/* MEDIA QUERIES */
+
+
 /* Media Query For Tablet */
 
 @media only screen and (min-width: 768px) {
@@ -473,9 +476,6 @@ p {
     h1.section-title {
         font-size: 6rem;
     }
-    /* Welcome */
-    /* End welcome */
-    /* Project */
     #projects .project-item {
         flex-direction: row;
     }
